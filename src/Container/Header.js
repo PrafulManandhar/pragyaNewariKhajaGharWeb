@@ -77,8 +77,6 @@ const Header = (props) => {
                       onClick={() => {
                         setActive();
                       }}
-                      target="_blank"
-                      rel="https://www.facebook.com/PragyaNewarikhajaGhar/?view_public_for=103870334828647"
                       href="https://www.facebook.com/PragyaNewarikhajaGhar/?view_public_for=103870334828647"
                     >
                       {" "}

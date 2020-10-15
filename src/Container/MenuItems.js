@@ -241,6 +241,11 @@ const MenuItems = (props) => {
     ],
   });
 
+  useEffect(() => {
+    // Update the document title using the browser API
+    setState();
+  }, []);
+
   return (
     <Container>
       <div className="menu-category-list">
