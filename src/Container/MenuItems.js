@@ -44,7 +44,7 @@ const MenuItems = (props) => {
       {
         img: BuffKhajaSet,
         name: "Buff Khaja Set",
-        price: "120 Nrs",
+        price: "100 Nrs",
       },
       {
         img: BuffKhajaSet,
@@ -60,33 +60,33 @@ const MenuItems = (props) => {
     buffItem: [
       {
         img: Giddi,
-        name: "Giddi",
-        price: "120 Nrs",
+        name: "तिस्स्य ",
+        price: "160 Nrs",
       },
       {
         img: MoMo,
         name: "MoMo",
-        price: "120 Nrs",
+        price: "100 Nrs",
       },
       {
         img: Giddi,
         name: "Giddi",
-        price: "120 Nrs",
+        price: "140 Nrs",
       },
       {
         img: Bara,
         name: "Mix Bara",
-        price: "120 Nrs",
+        price: "80 Nrs",
       },
       {
         img: Sekuwa,
         name: " Buff Sekuwa",
-        price: "120 Nrs",
+        price: "160 Nrs",
       },
       {
         img: Choila,
         name: "Buff Choila",
-        price: "120 Nrs",
+        price: "140 Nrs",
       },
       {
         img: BuffSusage,
@@ -96,59 +96,59 @@ const MenuItems = (props) => {
       {
         img: Vutan,
         name: "Buff Vutan",
-        price: "120 Nrs",
+        price: "100 Nrs",
       },
       {
         img: Supumhicha,
         name: " Supu Mhicha ",
-        price: "120 Nrs",
+        price: "240 Nrs",
       },
       {
         img: MoMo,
         name: " Buff MoMo ",
-        price: "120 Nrs",
+        price: "100 Nrs",
       },
       {
         img: Chatamari,
         name: " Mix Chatamari",
-        price: "120 Nrs",
+        price: "100 Nrs",
       },
       {
         img: Kachila,
         name: "Kachila",
-        price: "120 Nrs",
+        price: "140 Nrs",
       },
     ],
     chickenItem: [
       {
         img: ChickenLeg,
         name: "Chicken Leg Piece",
-        price: "120 Nrs",
+        price: "140 Nrs",
       },
       {
         img: Pangra,
         name: " Pangra",
-        price: "120 Nrs",
+        price: "160 Nrs",
       },
       {
         img: ChickenSusage,
         name: "Chicken Sussage",
-        price: "120 Nrs",
+        price: "140 Nrs",
       },
       {
         img: Omlet,
         name: "Omlet",
-        price: "120 Nrs",
+        price: "60 Nrs",
       },
       {
         img: EggPouch,
         name: "Pouch",
-        price: "120 Nrs",
+        price: "60 Nrs",
       },
       {
         img: ChickenSusage,
         name: "Chicken Sekuwa",
-        price: "120 Nrs",
+        price: "160 Nrs",
       },
     ],
     muttonItem: [
@@ -160,19 +160,19 @@ const MenuItems = (props) => {
       {
         img: MuttonVuttan,
         name: "Mutton Vutan",
-        price: "120 Nrs",
+        price: "140 Nrs",
       },
     ],
     fishItem: [
       {
         img: FishPiece,
         name: "Fish Fry",
-        price: "120 Nrs",
+        price: "100 Nrs",
       },
       {
         img: Prawn,
         name: "Prawn Fish",
-        price: "120 Nrs",
+        price: "160 Nrs",
       },
       {
         img: CurryFish,
@@ -184,59 +184,59 @@ const MenuItems = (props) => {
       {
         img: Aalu,
         name: "Sadheko Aalu",
-        price: "120 Nrs",
+        price: "40 Nrs",
       },
       {
         img: GreenVatmas,
         name: "Green Vatmas",
-        price: "120 Nrs",
+        price: "80 Nrs",
       },
       {
         img: GreenVatmas,
         name: "Vatmas",
-        price: "120 Nrs",
+        price: "80 Nrs",
       },
       {
         img: Chanaa,
         name: "Chanaa",
-        price: "120 Nrs",
+        price: "40 Nrs",
       },
       {
         img: AlluTama,
         name: "Allu Tamma",
-        price: "120 Nrs",
+        price: "20 Nrs",
       },
       {
         img: Bara,
         name: "Veg Bara",
-        price: "120 Nrs",
+        price: "40 Nrs",
       },
       {
         img: Aalu,
         name: "Achar",
-        price: "120 Nrs",
+        price: "40 Nrs",
       },
     ],
     beverages: [
       {
         img: Coke,
         name: "Coke",
-        price: "120 Nrs",
+        price: "50 Nrs",
       },
       {
         img: Fanta,
         name: "Fanta",
-        price: "120 Nrs",
+        price: "50 Nrs",
       },
       {
         img: Sprite,
         name: "Sprite",
-        price: "120 Nrs",
+        price: "50 Nrs",
       },
       {
         img: Coke,
         name: "Soda",
-        price: "120 Nrs",
+        price: "50 Nrs",
       },
     ],
   });
