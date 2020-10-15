@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Choila from "../Assets/Images/Items/Choila.jpg";
 import BuffKhajaSet from "../Assets/Images/Items/BuffKhajaSet.jpg";
@@ -240,6 +240,7 @@ const MenuItems = (props) => {
       },
     ],
   });
+
   return (
     <Container>
       <div className="menu-category-list">
