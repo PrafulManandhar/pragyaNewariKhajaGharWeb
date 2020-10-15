@@ -1,0 +1,112 @@
+.foot-nav {
+  margin-bottom: 5px;
+  margin-left: 100px;
+  .active {
+    color: $primary-1;
+    text-decoration: none;
+  }
+
+  a,
+  span {
+    font-weight: bolder;
+    cursor: pointer;
+    color: $dark-gray;
+    margin: 0 12px 5px 13px;
+    display: inline-block;
+    // @include respond-to(small) {
+    //   margin: 0 15px 05px 16px;
+    // }
+    &:hover {
+      color: $danger-red;
+      text-decoration: double;
+      z-index: 1;
+      -webkit-transition: all 3s;
+      -moz-transition: all 3s;
+      transition: all 1s;
+    }
+    &.link {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 3px;
+        background: $dark-gray;
+        width: 1px;
+        height: 16px;
+      }
+      &:first-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-left: 10px;
+    span {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.header-main {
+  background: white;
+  padding: 20px 0;
+  position: relative;
+  z-index: 3;
+  .bg-light {
+    background: white !important;
+    .navbar-brand {
+      width: 200px;
+      padding: 0;
+      img {
+        max-width: 100%;
+      }
+      @include respond-to(small) {
+        width: 280px;
+      }
+    }
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-nav {
+    .btn {
+      @include respond-to(small) {
+        margin-left: 20px;
+      }
+    }
+    .signup-signin {
+      .btn {
+        margin: 0 30px 0 0;
+      }
+    }
+  }
+}
+
+.shadow-line {
+  background: white;
+  height: 1px;
+  width: 100%;
+  margin-top: -2px;
+  @include box-shadow(0 0 10px rgba(black, 1));
+}
+
+.admin-wrapper {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  @include respond-to(small) {
+    margin-top: 42px;
+  }
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  display: flex;
+}

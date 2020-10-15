@@ -1,0 +1,17 @@
+.footer-section {
+  background: #fafafa;
+  padding: 30px 0;
+  margin-top: auto;
+
+  .copyright {
+    p {
+      font-size: 14px;
+      color: #828282;
+      margin-bottom: 0;
+      span {
+        color: $dark-gray;
+        padding-left: 5px;
+      }
+    }
+  }
+}
