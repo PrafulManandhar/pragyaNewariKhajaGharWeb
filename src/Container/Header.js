@@ -128,7 +128,15 @@ const Header = (props) => {
                       href="https://www.facebook.com/PragyaNewarikhajaGhar/?view_public_for=103870334828647"
                     >
                       {" "}
-                      FeedBack
+                      Facebook Page
+                    </a>
+                    <a
+                      className="menu"
+                      href=" https://www.messenger.com/t/PragyaNewarikhajaGhar
+                      "
+                    >
+                      {" "}
+                      Message Us
                     </a>
                   </div>
                 </div>
