@@ -29,7 +29,11 @@ const Header = (props) => {
           <Navbar expand="lg" bg="light">
             <div
               className="navbar-brand"
-              onClick={() => alert("pragya newari khaja ghar")}
+              onClick={() => {
+                localStorage.setItem("active", "menu");
+                getActive();
+                props.history.push("/");
+              }}
               style={{ cursor: "pointer" }}
             >
               <img src={MainIcon} alt="logo" className="logo" width="350px" />

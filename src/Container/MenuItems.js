@@ -11,7 +11,7 @@ import Bara from "../Assets/Images/Items/Bara.jpg";
 import MoMo from "../Assets/Images/Items/momo.jpg";
 import Sekuwa from "../Assets/Images/Items/sekuwa.jpg";
 import FishPiece from "../Assets/Images/Items/FishPiece.jpg";
-import ChickenLeg from "../Assets/Images/Items/ChickenLeg.jpg";
+// import ChickenLeg from "../Assets/Images/Items/ChickenLeg.jpg";
 import BuffSusage from "../Assets/Images/Items/BuffSusage.png";
 import ChickenSusage from "../Assets/Images/Items/chickenSusage.jpg";
 import Prawn from "../Assets/Images/Items/Prawn.jpg";
@@ -21,6 +21,18 @@ import Chatamari from "../Assets/Images/Items/Chatamari.jpg";
 import Coke from "../Assets/Images/Items/Coke.png";
 import Sprite from "../Assets/Images/Items/Sprite.jpg";
 import Fanta from "../Assets/Images/Items/Fanta.jpg";
+import soda from "../Assets/Images/Items/soda.png";
+
+import vegbara from "../Assets/Images/Items/vegbara.jpg";
+import bhatmas from "../Assets/Images/Items/bhatmas.jpg";
+
+import khago from "../Assets/Images/Items/khago.jpg";
+
+import chickenlegpiece from "../Assets/Images/Items/chickenlegpiece.jpg";
+import ChickenKhajaSet from "../Assets/Images/Items/khajaset.jpg";
+import kurkure from "../Assets/Images/Items/kurkure.jpg";
+import chohi from "../Assets/Images/Items/chohi.jpg";
+
 import Vutan from "../Assets/Images/Items/vutan.jpg";
 import Pangra from "../Assets/Images/Items/pangra.jpg";
 import Omlet from "../Assets/Images/Items/omlet.jpg";
@@ -47,7 +59,7 @@ const MenuItems = (props) => {
         price: "100 Nrs",
       },
       {
-        img: BuffKhajaSet,
+        img: ChickenKhajaSet,
         name: "Chicken Khaja Set",
         price: "120 Nrs",
       },
@@ -68,11 +80,7 @@ const MenuItems = (props) => {
         name: "MoMo",
         price: "100 Nrs",
       },
-      {
-        img: Giddi,
-        name: "Giddi",
-        price: "140 Nrs",
-      },
+
       {
         img: Bara,
         name: "Mix Bara",
@@ -99,9 +107,24 @@ const MenuItems = (props) => {
         price: "100 Nrs",
       },
       {
+        img: Giddi,
+        name: "Giddi",
+        price: "140 Nrs",
+      },
+      {
+        img: kurkure,
+        name: "Kurkure",
+        price: "100 Nrs",
+      },
+      {
         img: Supumhicha,
         name: " Supu Mhicha ",
         price: "240 Nrs",
+      },
+      {
+        img: khago,
+        name: "khago ",
+        price: "160 Nrs",
       },
       {
         img: MoMo,
@@ -118,10 +141,15 @@ const MenuItems = (props) => {
         name: "Kachila",
         price: "140 Nrs",
       },
+      {
+        img: chohi,
+        name: "Chohi",
+        price: "100 Nrs",
+      },
     ],
     chickenItem: [
       {
-        img: ChickenLeg,
+        img: chickenlegpiece,
         name: "Chicken Leg Piece",
         price: "140 Nrs",
       },
@@ -192,8 +220,8 @@ const MenuItems = (props) => {
         price: "80 Nrs",
       },
       {
-        img: GreenVatmas,
-        name: "Vatmas",
+        img: bhatmas,
+        name: "Bhatmas",
         price: "80 Nrs",
       },
       {
@@ -207,7 +235,7 @@ const MenuItems = (props) => {
         price: "20 Nrs",
       },
       {
-        img: Bara,
+        img: vegbara,
         name: "Veg Bara",
         price: "40 Nrs",
       },
@@ -234,7 +262,7 @@ const MenuItems = (props) => {
         price: "50 Nrs",
       },
       {
-        img: Coke,
+        img: soda,
         name: "Soda",
         price: "50 Nrs",
       },
