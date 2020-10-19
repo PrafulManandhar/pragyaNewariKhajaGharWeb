@@ -173,11 +173,11 @@ const MenuItems = (props) => {
         name: "Pouch",
         price: "60 Nrs",
       },
-      {
-        img: ChickenSusage,
-        name: "Chicken Sekuwa",
-        price: "160 Nrs",
-      },
+      // {
+      //   img: ChickenSusage,
+      //   name: "Chicken Sekuwa",
+      //   price: "160 Nrs",
+      // },
     ],
     muttonItem: [
       {
