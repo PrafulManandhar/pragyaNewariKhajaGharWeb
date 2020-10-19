@@ -11,7 +11,7 @@ const ItemCard = (props) => {
           alt="menu"
           width="100%"
           height="300px"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "fit" }}
         />
       </div>
 
