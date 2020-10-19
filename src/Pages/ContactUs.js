@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
 import Header from "../Container/Header";
 import Footer from "../Container/Footer";
-import MenuHeader from "../Container/MenuHeader";
-import MenuItems from "../Container/MenuItems";
 
 class Contact extends Component {
   render() {
