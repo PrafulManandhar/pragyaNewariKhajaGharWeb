@@ -82,3 +82,19 @@
     font-weight: 500;
   }
 }
+
+.sub-title {
+  @include rhythm(20, 26);
+  font-weight: 400;
+  @include respond-to(small) {
+    @include rhythm(30, 36);
+  }
+  text-align: center;
+}
+.subhead-title {
+  @include rhythm(18, 22);
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: $gray;
+  text-align: center;
+}

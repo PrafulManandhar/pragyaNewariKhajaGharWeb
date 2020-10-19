@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MainIcon from "../Assets/Images/Icons/pragyaLogo.png";
 // import OrderPng from "../Assets/Images/Icons/order.png";
-
+import { withRouter } from "react-router-dom";
 import {
   Container,
   Nav,
@@ -13,19 +13,15 @@ import {
   // Spinner,
 } from "react-bootstrap";
 const Header = (props) => {
-  const setActive = () => {
-    var header = document.getElementById("foot-nav");
-    var btns = header.getElementsByClassName("menu");
+  useEffect(() => {
+    // Update the document title using the browser API
+    setActive(localStorage.active);
+  }, []);
 
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+  const [active, setActive] = useState("menu");
+  const getActive = () => {
+    setActive(localStorage.active);
   };
-
   return (
     <React.Fragment>
       <header className="header-main mt-3">
@@ -43,40 +39,89 @@ const Header = (props) => {
               <Nav className="ml-md-auto">
                 <div lg="5" className="mt-4">
                   <div className="foot-nav" id="foot-nav">
-                    <span
-                      className="menu active"
-                      onClick={() => {
-                        setActive();
-                      }}
-                    >
-                      {" "}
-                      Menu{" "}
-                    </span>
-                    <span
-                      className="menu"
-                      onClick={() => {
-                        setActive();
-                      }}
-                    >
-                      {" "}
-                      About
-                    </span>
+                    {active === "menu" ? (
+                      <span
+                        className="active"
+                        onClick={() => {
+                          console.log("he");
+                          localStorage.setItem("active", "menu");
+                          getActive();
+                          props.history.push("/");
+                        }}
+                      >
+                        {" "}
+                        Menu{" "}
+                      </span>
+                    ) : (
+                      <span
+                        className="menu"
+                        onClick={() => {
+                          localStorage.setItem("active", "menu");
+                          getActive();
+                          props.history.push("/");
+                        }}
+                      >
+                        {" "}
+                        Menu{" "}
+                      </span>
+                    )}
 
-                    <span
-                      className="menu"
-                      onClick={() => {
-                        setActive();
-                      }}
-                    >
-                      {" "}
-                      Contact{" "}
-                    </span>
+                    {active === "about" ? (
+                      <span
+                        className="active"
+                        onClick={() => {
+                          props.history.push("/about");
+
+                          localStorage.setItem("active", "about");
+                          getActive();
+                          props.history.push("/about");
+                        }}
+                      >
+                        {" "}
+                        About
+                      </span>
+                    ) : (
+                      <span
+                        className="menu"
+                        onClick={() => {
+                          props.history.push("/about");
+
+                          localStorage.setItem("active", "about");
+                          getActive();
+                        }}
+                      >
+                        {" "}
+                        About
+                      </span>
+                    )}
+                    {active === "contact" ? (
+                      <span
+                        className="active"
+                        onClick={() => {
+                          localStorage.setItem("active", "contact");
+                          getActive();
+                          props.history.push("/contact");
+                        }}
+                      >
+                        {" "}
+                        Contact{" "}
+                      </span>
+                    ) : (
+                      <span
+                        className="menu"
+                        onClick={() => {
+                          localStorage.setItem("active", "contact");
+                          getActive();
+                          props.history.push("/contact");
+                        }}
+                      >
+                        {" "}
+                        Contact{" "}
+                      </span>
+                    )}
 
                     <a
                       className="menu"
-                      onClick={() => {
-                        setActive();
-                      }}
                       href="https://www.facebook.com/PragyaNewarikhajaGhar/?view_public_for=103870334828647"
                     >
                       {" "}
@@ -95,4 +140,4 @@ const Header = (props) => {
     </React.Fragment>
   );
 };
-export default Header;
+export default withRouter(Header);
