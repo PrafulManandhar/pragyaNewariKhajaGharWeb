@@ -18,7 +18,9 @@ import Prawn from "../Assets/Images/Items/Prawn.jpg";
 import AlluTama from "../Assets/Images/Items/AlluTama.jpg";
 import Chanaa from "../Assets/Images/Items/Chanaa.jpg";
 import Chatamari from "../Assets/Images/Items/Chatamari.jpg";
-import Coke from "../Assets/Images/Items/Coke.png";
+import Coke from "../Assets/Images/Items/Coke.jpg";
+import Vutan from "../Assets/Images/Items/Vutan.jpg";
+
 import Sprite from "../Assets/Images/Items/Sprite.jpg";
 import Fanta from "../Assets/Images/Items/Fanta.jpg";
 import soda from "../Assets/Images/Items/soda.png";
@@ -32,13 +34,13 @@ import chickenlegpiece from "../Assets/Images/Items/chickenlegpiece.jpg";
 import ChickenKhajaSet from "../Assets/Images/Items/khajaset.jpg";
 import kurkure from "../Assets/Images/Items/kurkure.jpg";
 import chohi from "../Assets/Images/Items/chohi.jpg";
+import KhasiVutan from "../Assets/Images/Items/khasiVutan.jpg";
 
-import Vutan from "../Assets/Images/Items/vutan.jpg";
 import Pangra from "../Assets/Images/Items/pangra.jpg";
 import Omlet from "../Assets/Images/Items/omlet.jpg";
 import Supumhicha from "../Assets/Images/Items/Sapuphicha.jpg";
 
-import MuttonVuttan from "../Assets/Images/Items/muttonVutan.jpg";
+// import MuttonVuttan from "../Assets/Images/Items/muttonVutan.jpg";
 
 import Aalu from "../Assets/Images/Items/aalu.jpg";
 
@@ -186,7 +188,7 @@ const MenuItems = (props) => {
         price: "120 Nrs",
       },
       {
-        img: MuttonVuttan,
+        img: KhasiVutan,
         name: "Mutton Vutan",
         price: "140 Nrs",
       },
