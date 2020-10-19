@@ -21,7 +21,7 @@ class AboutUs extends Component {
                   and tasty newari food. We're also offering takeaway for those
                   who would prefer to enjoy newari food from the comfort of
                   their own homes.as well We make a free delivery food service
-                  near us .We have been serving newari dishes since 2004 AD.We
+                  near us.We have been serving newari dishes since 2004 AD.We
                   are known for the tasty newari dishes at a affordable price.
                 </p>
                 <p>
