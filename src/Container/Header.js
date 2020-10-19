@@ -47,7 +47,6 @@ const Header = (props) => {
                       <span
                         className="active"
                         onClick={() => {
-                          console.log("he");
                           localStorage.setItem("active", "menu");
                           getActive();
                           props.history.push("/");

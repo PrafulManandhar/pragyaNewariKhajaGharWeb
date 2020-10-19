@@ -3,7 +3,6 @@ import { Col } from "react-bootstrap";
 
 const ItemCard = (props) => {
   const img = props.itemDetail.img;
-  console.log("img", img);
   return (
     <Col className="item-card" md="6" xl="3" xs="12">
       <div>

@@ -41,7 +41,7 @@ class Contact extends Component {
             <Row>
               <Col className="mt-5">
                 <h2 className="sub-title text-center">Contact Us</h2>
-                <form
+                {/* <form
                   name="contact"
                   method="POST"
                   netlify-honeypot="bot-field"
@@ -66,7 +66,7 @@ class Contact extends Component {
                   <p>
                     <button type="submit">Send</button>
                   </p>
-                </form>
+                </form> */}
                 {/* <form onSubmit={this.handleSubmit}>
                   <p>
                     <label>
