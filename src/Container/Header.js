@@ -22,6 +22,11 @@ const Header = (props) => {
   const getActive = () => {
     setActive(localStorage.active);
   };
+
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <React.Fragment>
       <header className="header-main mt-3">
@@ -123,21 +128,28 @@ const Header = (props) => {
                       </span>
                     )}
 
-                    <a
+                    <span
                       className="menu"
-                      href="https://www.facebook.com/PragyaNewarikhajaGhar/?view_public_for=103870334828647"
+                      onClick={() => {
+                        openInNewTab(
+                          "https://www.facebook.com/PragyaNewarikhajaGhar/?view_public_for=103870334828647"
+                        );
+                      }}
                     >
                       {" "}
                       Facebook Page
-                    </a>
-                    <a
+                    </span>
+                    <span
                       className="menu"
-                      href=" https://www.messenger.com/t/PragyaNewarikhajaGhar
-                      "
+                      onClick={() => {
+                        openInNewTab(
+                          "https://www.messenger.com/t/PragyaNewarikhajaGhar"
+                        );
+                      }}
                     >
                       {" "}
                       Message Us
-                    </a>
+                    </span>
                   </div>
                 </div>
                 {/* <Col lg="3" className="mt-1 d-flex justify-content-end">

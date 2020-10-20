@@ -5,7 +5,7 @@ import Footer from "../Container/Footer";
 
 class AboutUs extends Component {
   componentDidMount = () => {
-    localStorage.setItem("active", "contact");
+    localStorage.setItem("active", "about");
   };
   render() {
     return (
