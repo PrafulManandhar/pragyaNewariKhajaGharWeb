@@ -6,6 +6,9 @@ import MenuHeader from "../Container/MenuHeader";
 import MenuItems from "../Container/MenuItems";
 
 class Main extends Component {
+  componentDidMount = () => {
+    localStorage.setItem("active", "menu");
+  };
   render() {
     return (
       <>

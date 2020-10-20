@@ -55,7 +55,6 @@
     font-weight: bolder;
     margin-bottom: 20px;
   }
-
   .items {
     display: flex;
     flex-wrap: wrap;
@@ -110,4 +109,11 @@
   margin-bottom: 10px;
   color: $gray;
   text-align: center;
+}
+
+.category-heading {
+  text-align: center;
+  color: $primary-1;
+  font-weight: bolder;
+  margin-bottom: 2px;
 }

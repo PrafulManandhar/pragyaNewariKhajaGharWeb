@@ -26,6 +26,16 @@ const MenuHeader = () => {
         this.className += " active-menu-header";
       });
     }
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active-menu-header");
+        current[0].className = current[0].className.replace(
+          " active-menu-header",
+          ""
+        );
+        this.className += " active-menu-header";
+      });
+    }
   };
   return (
     <Container>

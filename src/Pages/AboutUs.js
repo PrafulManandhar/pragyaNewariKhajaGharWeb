@@ -4,6 +4,9 @@ import Header from "../Container/Header";
 import Footer from "../Container/Footer";
 
 class AboutUs extends Component {
+  componentDidMount = () => {
+    localStorage.setItem("active", "contact");
+  };
   render() {
     return (
       <>
@@ -13,8 +16,8 @@ class AboutUs extends Component {
           <Container>
             {" "}
             <Row>
-              <Col className="mt-5">
-                <h2 className="sub-title">About Us</h2>
+              <Col>
+                <div className="our-menu">About Us</div>{" "}
                 <p>
                   Pragya Newari khaja Ghar serves you the typical newari food
                   with varities of newari dishes. We provide you fresh ,healthy
@@ -35,15 +38,14 @@ class AboutUs extends Component {
                   dishes like choila,chatamari and aloo tama are loved by most
                   of our customers
                 </p>
-
-                <h3 className="subhead-title mt-4">OUR VISION</h3>
+                <h5 className="category-heading">OUR VISION</h5>
                 <p>
                   Pragya Newari khaja Ghar Is dedicated to provide the customer
                   with the good food and good enviroment for spending time
                   together with their friends and family and to provide healthy
                   and quality food at affordable price.
                 </p>
-                <h3 className="subhead-title mt-4">OUR MISSION</h3>
+                <h5 className="category-heading">OUR MISSION</h5>
                 <p>
                   "Make and serve the freshest, most delicious newari dishes
                   quickly and courteously ,promote newari culture and dishes.”

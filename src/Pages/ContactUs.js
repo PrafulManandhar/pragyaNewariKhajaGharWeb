@@ -3,35 +3,12 @@ import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
 import Header from "../Container/Header";
 import Footer from "../Container/Footer";
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: "", email: "", message: "" };
-  }
-
-  /* Here’s the juicy bit for posting the form submission */
-
-  handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
+  componentDidMount = () => {
+    localStorage.setItem("active", "contact");
   };
-  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    // const { name, email, message } = this.state;
-
     return (
       <>
         <Header />
@@ -39,71 +16,8 @@ class Contact extends Component {
         <section className="admin-wrapper">
           <Container>
             <Row>
-              <Col className="mt-5">
-                <h2 className="sub-title text-center">Contact Us</h2>
-                {/* <form
-                  name="contact"
-                  method="POST"
-                  netlify-honeypot="bot-field"
-                  data-netlify="true"
-                >
-                  <p class="hidden">
-                    <label>
-                      Don’t fill this out if you're human:{" "}
-                      <input name="bot-field" />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Email: <input type="text" name="email" />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Message: <textarea name="message"></textarea>
-                    </label>
-                  </p>
-                  <p>
-                    <button type="submit">Send</button>
-                  </p>
-                </form> */}
-                {/* <form onSubmit={this.handleSubmit}>
-                  <p>
-                    <label>
-                      Your Name:{" "}
-                      <input
-                        type="text"
-                        name="name"
-                        value={name}
-                        onChange={this.handleChange}
-                      />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Your Email:{" "}
-                      <input
-                        type="email"
-                        name="email"
-                        value={email}
-                        onChange={this.handleChange}
-                      />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Message:{" "}
-                      <textarea
-                        name="message"
-                        value={message}
-                        onChange={this.handleChange}
-                      />
-                    </label>
-                  </p>
-                  <p>
-                    <button type="submit">Send</button>
-                  </p>
-                </form> */}
+              <Col>
+                <div className="our-menu">Contact Us</div>{" "}
                 <Row className="mt-4">
                   <Col>
                     <Accordion defaultActiveKey="0">
