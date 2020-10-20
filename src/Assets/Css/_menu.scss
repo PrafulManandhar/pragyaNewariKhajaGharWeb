@@ -88,6 +88,12 @@
     color: #333;
     font-weight: 500;
   }
+  @media screen and (max-width: 480px) {
+    height: 250px;
+    img {
+      height: 150px;
+    }
+  }
 }
 
 .sub-title {
