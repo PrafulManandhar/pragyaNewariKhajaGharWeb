@@ -30,36 +30,46 @@ class Contact extends Component {
                             <Row>
                               <Col>
                                 <Row>
-                                  <Col md="4" className="text-muted">
-                                    Address
+                                  <Col md="3" sm="3" className="text-muted">
+                                    Address :
                                   </Col>
-                                  <Col md="8">
+                                  <Col md="9" sm="9">
                                     Baghbazar 28, kathmandu 46620 , Nepal
                                   </Col>
                                 </Row>
                                 <Row className="mt-3">
-                                  <Col md="4" className="text-muted">
-                                    Phone Number LandLine
+                                  <Col md="3" xs="3" className="text-muted">
+                                    Phone :
                                   </Col>
-                                  <Col md="8">
+                                  <Col md="9" xs="9">
                                     <a href="tel:014219296">014219296</a>
                                   </Col>
                                 </Row>
                                 <Row className="mt-3">
-                                  <Col md="4" className="text-muted">
-                                    Phone Number Praful Manandhar
+                                  <Col md="3" xs="3" className="text-muted">
+                                    Mobile :
                                   </Col>
-                                  <Col md="8">
+                                  <Col md="8" xs="8">
                                     <a href="tel:9808697457">9808697457</a>
                                   </Col>
                                 </Row>
                                 <Row className="mt-3">
-                                  <Col md="4" className="text-muted">
-                                    Email
+                                  <Col md="3" xs="3" className="text-muted">
+                                    Email :
                                   </Col>
-                                  <Col md="8">
+                                  <Col md="9" xs="9">
                                     <a href="mailto:manandhar.praful13@gmail.com">
                                       manandhar.praful13@gmail.com
+                                    </a>
+                                  </Col>
+                                </Row>
+                                <Row className="mt-3">
+                                  <Col md="3" xs="3" className="text-muted">
+                                    Map :
+                                  </Col>
+                                  <Col md="9" xs="9">
+                                    <a href="https://goo.gl/maps/ETQa3RWX2pXs3n8cA">
+                                      Get direction here
                                     </a>
                                   </Col>
                                 </Row>
