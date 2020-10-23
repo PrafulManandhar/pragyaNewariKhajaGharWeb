@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import MainIcon from "../Assets/Images/Icons/pragyaLogo.png";
+import MainIcon from "../Assets/Images/Icons/pragyalogo.png";
 // import OrderPng from "../Assets/Images/Icons/order.png";
 import { withRouter } from "react-router-dom";
 import {
@@ -41,7 +41,7 @@ const Header = (props) => {
               }}
               style={{ cursor: "pointer" }}
             >
-              <img src={MainIcon} alt="logo" className="logo" width="350px" />
+              <img src={MainIcon} alt="logo" className="logo" width="400px" />
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

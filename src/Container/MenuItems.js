@@ -16,7 +16,7 @@ import BuffSusage from "../Assets/Images/Items/BuffSusage.png";
 import ChickenSusage from "../Assets/Images/Items/chickenSusage.jpg";
 import Prawn from "../Assets/Images/Items/Prawn.jpg";
 import AlluTama from "../Assets/Images/Items/AlluTama.jpg";
-import Chanaa from "../Assets/Images/Items/Chanaa.jpg";
+import Chanaa from "../Assets/Images/Items/chana.jpg";
 import Chatamari from "../Assets/Images/Items/Chatamari.jpg";
 import Coke from "../Assets/Images/Items/Coke.jpg";
 import Vutan from "../Assets/Images/Items/Vutan.jpg";
@@ -42,7 +42,8 @@ import Supumhicha from "../Assets/Images/Items/Sapuphicha.jpg";
 
 // import MuttonVuttan from "../Assets/Images/Items/muttonVutan.jpg";
 
-import Aalu from "../Assets/Images/Items/aalu.jpg";
+import Aalu from "../Assets/Images/Items/allu.jpg";
+import bodi from "../Assets/Images/Items/bodi.jpg";
 
 import CurryFish from "../Assets/Images/Items/CurryFish.jpg";
 
@@ -173,7 +174,7 @@ const MenuItems = (props) => {
       {
         img: EggPouch,
         name: "Pouch",
-        price: "60 Nrs",
+        price: "30 Nrs",
       },
       // {
       //   img: ChickenSusage,
@@ -229,6 +230,11 @@ const MenuItems = (props) => {
       {
         img: Chanaa,
         name: "Chanaa",
+        price: "40 Nrs",
+      },
+      {
+        img: bodi,
+        name: "Bodi",
         price: "40 Nrs",
       },
       {

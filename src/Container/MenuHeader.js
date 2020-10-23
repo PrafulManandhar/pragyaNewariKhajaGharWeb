@@ -1,18 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-
 const MenuHeader = () => {
   const setActive = () => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
-    });
-
     var header = document.getElementById("menu-headers");
     var btns = header.getElementsByClassName("headerMenu");
 
@@ -26,16 +15,15 @@ const MenuHeader = () => {
         this.className += " active-menu-header";
       });
     }
-    for (var j = 0; j < btns.length; j++) {
-      btns[j].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active-menu-header");
-        current[0].className = current[0].className.replace(
-          " active-menu-header",
-          ""
-        );
-        this.className += " active-menu-header";
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
       });
-    }
+    });
   };
   return (
     <Container>
@@ -49,7 +37,11 @@ const MenuHeader = () => {
           >
             Comboo Offer
           </a>
-          <a className="headerMenu" onClick={setActive} href="#buff">
+          <a
+            className="headerMenu buff"
+            onClick={() => setActive()}
+            href="#buff"
+          >
             Buff
           </a>
 
