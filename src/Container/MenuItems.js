@@ -16,7 +16,7 @@ import BuffSusage from "../Assets/Images/Items/BuffSusage.png";
 import ChickenSusage from "../Assets/Images/Items/chickenSusage.jpg";
 import Prawn from "../Assets/Images/Items/Prawn.jpg";
 import AlluTama from "../Assets/Images/Items/AlluTama.jpg";
-import Chanaa from "../Assets/Images/Items/chana.jpg";
+import Chanaa from "../Assets/Images/Items/Channa.jpg";
 import Chatamari from "../Assets/Images/Items/Chatamari.jpg";
 import Coke from "../Assets/Images/Items/Coke.jpg";
 import Vutan from "../Assets/Images/Items/Vutan.jpg";
